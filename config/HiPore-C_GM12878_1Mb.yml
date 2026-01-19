@@ -1,0 +1,10 @@
+aggr: gcn
+batch_size: 512
+conv_layer: 2
+dropout: 0.5
+hidden_dim: 64
+lr: 0.001
+pool: size
+resi: 0.2
+z_ratio: 0.95
+size_list: [3, 4, 5, 6, 7, 8, 9, 10]
