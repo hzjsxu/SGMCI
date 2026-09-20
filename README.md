@@ -3,6 +3,8 @@ Subgraph representation learning predicts multi-way chromatin interactions under
 
 ![image](https://github.com/user-attachments/assets/2e9ffd65-620e-40b5-af7a-3313028fcdf6)
 
+Multi-way chromatin interactions (MCIs) orchestrate higher-order genome organization, yet their genome-wide inference from Hi-C remains challenging. We present SGMCI, a subgraph representation learning framework that casts MCI prediction as subgraph classification on Hi-C graphs. SGMCI integrates graph autoencoder-derived node embeddings, graph convolutional message passing, mean pooling, and MLP decoding. Chromosome-level leave-one-out cross-validation prevents transductive leakage. Across four human and mouse cell lines and three resolutions, SGMCI achieves superior performance. Predictions are validated by DNA seqFISH+. Separately, cell-type-specific MCIs identified by SGMCI are enriched for cell-identity genes. SGMCI offers a scalable route to decode 3D genome architecture from Hi-C data.
+
 # Requirements:
 You'll need to install the following packages in order to run the codes.
 - python 3.9.6
