@@ -34,6 +34,6 @@ If you need more, please contact us (xujinsheng@mail.kiz.ac.cn) to obtain all da
 python SGMCI.py --use_struc --use_seed --repeat 10 --device 0 --dataset HiPore-C_GM12878_1Mb --ns_mode MIX --test_chr 'chr1' --genome hg38 --binsize 1Mb
 ```
 
-## Figure_scripts
+## Reproducing main figures
 
 The directory Figure_scripts contains the source data and plotting scripts used in the SGMCI manuscript.
