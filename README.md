@@ -16,6 +16,13 @@ You'll need to install the following packages in order to run the codes.
 - pandas 1.3.5
 - umap-learn 0.5.6
 
+We recommend using conda (the project root provides environment.yml):
+```
+# In the project root
+conda env create -f environment.yml
+conda activate SGMCI
+```
+
 ## Datasets
 
 We provided test data in this repository.
