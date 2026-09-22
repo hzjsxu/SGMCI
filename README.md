@@ -23,16 +23,27 @@ conda env create -f environment.yml
 conda activate SGMCI
 ```
 
+# Data preparation
+By default, scripts read data from the following directory: `dataset/HiPore-C_<name>_<resolution>`, where `<name>` could be GM12878, K562, hESC, and mESC; `<resolution>` could be 1Mb, 100kb, and 5kb. In this repository, we use HiPore-C_GM12878_1Mb as default.
+The input data includes:
+- `ND_MIX_subgraphs.pth`: consists of 4 columns: (1) MCI (Multi-way Chromatin Interaction): Composed of node IDs connected by hyphens. (2) Label: Binary label indicating positive (1) or negative (0) samples. (3) Data type: Specifies whether the sample belongs to the training, testing, or validation set (train, test, or val). (4) (2)Weight: The weight value associated with the MCI.
+- `edge_list.txt`: the first two columns represent the IDs of a pair of nodes, and the third column indicates the interaction strength between them.
+- `hg38.1Mb.node_num.txt`：the first column specifies the chromosome name, and the second column indicates the number of nodes associated with that chromosome. 
+
+
 ## Datasets
 
 We provided test data in this repository.
 
 If you need more, please contact us (xujinsheng@mail.kiz.ac.cn) to obtain all data used in the study.
 
-## Usages
+## Usage
 ```
 python SGMCI.py --use_struc --use_seed --repeat 10 --device 0 --dataset HiPore-C_GM12878_1Mb --ns_mode MIX --test_chr 'chr1' --genome hg38 --binsize 1Mb
 ```
+
+## Output
+
 
 ## Reproducing main figures
 
