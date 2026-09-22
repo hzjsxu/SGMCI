@@ -40,4 +40,4 @@ The directory Figure_scripts contains the source data and plotting scripts used 
 
 ### Contact
 
-Issues: please submit via repository issues (include error logs, commands, environment info, and reproduction)
+- Issues: please submit via repository issues (include error logs, commands, environment info, and reproduction)
