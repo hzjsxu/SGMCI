@@ -38,11 +38,15 @@ We provided test data in this repository.
 If you need more, please contact us (xujinsheng@mail.kiz.ac.cn) to obtain all data used in the study.
 
 ## Usage
+You can directly run `run_SGMCI.sh` to get results of 4 negative sampling strategies, or run the code below to test the code:
 ```
 python SGMCI.py --use_struc --use_seed --repeat 10 --device 0 --dataset HiPore-C_GM12878_1Mb --ns_mode MIX --test_chr 'chr1' --genome hg38 --binsize 1Mb
 ```
 
 ## Output
+Output are saved to `results/<dataset>` directory by default. It includes:
+- `<dataset>.tsv`: SGMCI's prediction score for each ccandidate subgraph (MCI).
+- `<dataset>.pt`: the best model saved.
 
 
 ## Reproducing main figures
