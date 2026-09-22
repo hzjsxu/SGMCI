@@ -5,7 +5,7 @@ Subgraph representation learning predicts multi-way chromatin interactions under
 
 Multi-way chromatin interactions (MCIs) orchestrate higher-order genome organization, yet their genome-wide inference from Hi-C remains challenging. We present SGMCI, a subgraph representation learning framework that casts MCI prediction as subgraph classification on Hi-C graphs. SGMCI integrates graph autoencoder-derived node embeddings, graph convolutional message passing, mean pooling, and MLP decoding. Chromosome-level leave-one-out cross-validation prevents transductive leakage. Across four human and mouse cell lines and three resolutions, SGMCI achieves superior performance. Predictions are validated by DNA seqFISH+. Separately, cell-type-specific MCIs identified by SGMCI are enriched for cell-identity genes. SGMCI offers a scalable route to decode 3D genome architecture from Hi-C data.
 
-# Requirements:
+## Requirements:
 You'll need to install the following packages in order to run the codes.
 - python 3.9.6
 - pytorch 1.9.0
@@ -23,7 +23,7 @@ conda env create -f environment.yml
 conda activate SGMCI
 ```
 
-# Data preparation
+## Data preparation
 By default, scripts read data from the following directory: `dataset/HiPore-C_<name>_<resolution>`, where `<name>` could be GM12878, K562, hESC, and mESC; `<resolution>` could be 1Mb, 100kb, and 5kb. In this repository, we use HiPore-C_GM12878_1Mb as default.
 The input data includes:
 - `ND_MIX_subgraphs.pth`: consists of 4 columns: (1) MCI (Multi-way Chromatin Interaction): Composed of node IDs connected by hyphens. (2) Label: Binary label indicating positive (1) or negative (0) samples. (3) Data type: Specifies whether the sample belongs to the training, testing, or validation set (train, test, or val). (4) (2)Weight: The weight value associated with the MCI.
