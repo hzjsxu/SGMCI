@@ -37,3 +37,7 @@ python SGMCI.py --use_struc --use_seed --repeat 10 --device 0 --dataset HiPore-C
 ## Reproducing main figures
 
 The directory Figure_scripts contains the source data and plotting scripts used in the SGMCI manuscript.
+
+### Contact
+
+Issues: please submit via repository issues (include error logs, commands, environment info, and reproduction)
